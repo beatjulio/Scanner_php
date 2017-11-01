@@ -1,0 +1,12 @@
+<?php
+
+
+try {
+	$conexion = new PDO('mysql:host=localhost;dbname=cl20-julio', 'cl20-julio', 'Chivas45');
+	} catch (PDOException $e) {
+		echo "Error:" . $e->getMessage();;
+	}
+
+
+?>
+
