@@ -24,10 +24,14 @@ if (isset($_SESSION['admin'])) {
         <div class="tabla">
             <h1 class="titulo">Boletos por Persona</h1>
 		<hr class="border">
+                
         <?php session_start();
 ?>
    
       <?php  include 'conexion.php';  //mandar a traer el include y traer la base de datos y no estar escribiendo en cada pagina el codigo de conexion
+      
+ 
+      
         
       $sql= "SELECT * FROM boletoPersona";
       $data = mysql_query($sql)

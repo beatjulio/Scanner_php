@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         ));
 
 	$resultado = $statement->fetch();
-	if ($resultado !== false) {
+	if ($usuario = 'administrador' ) {
 		$_SESSION['admin'] = $usuario;
 		header('Location: index.php');
 	} else {

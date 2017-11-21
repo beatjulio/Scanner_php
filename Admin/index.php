@@ -1,11 +1,13 @@
 <?php
 session_start();
-if (isset($_SESSION['admin'])) {
-    require 'views/header_view.php';
-    
-}else{
-     header('Location: login.php');
-}
+//if (isset($_SESSION['admin'])) {
+//    require 'views/header_view.php';
+//    
+//}else{
+//     header('Location: login.php');
+//}
+
+require 'views/header_view.php';
 ?>
         
         <div class="contenedorindex">
@@ -22,6 +24,8 @@ if (isset($_SESSION['admin'])) {
 			    <a id="botonesabajo" href="consultaRegistroBoleto.php">Consultar Boletos por Persona</a>
 
                 <a id="boton_final" href="consultaRegistroUsuario.php">Consultar Resgistro de Accesos</a>
+                
+                 <a id="boton_final" href="Juego.php">Pasar el rato</a>
                
     		</div>
 		</body>

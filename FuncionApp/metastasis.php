@@ -32,14 +32,14 @@ $acceso;
     
 
 if($id == "$id_boleto"){
-    $acceso="Este boleto fue usado por:";
+    $acceso="Este boleto fue usado";
     
     
     $sql= "INSERT INTO resumen (acceso,nombre,evento,servicio,fechaHora) VALUES ('$acceso','$nombre','$evento','$servicio','$fecha')";
     mysql_query($sql);
     
   
-    
+    echo "Data Matched";
     
 
     
@@ -73,6 +73,8 @@ WHERE boletoPersona.idBoleto = $id";
     $sql0= "INSERT INTO idBoleto (id_boleto,evento,nombre_completo,servicio,fechaHora) VALUES ('$id_boleto','$evento','$nombre','$servicio','$fechainsert')";
     mysql_query($sql0);
     
+    echo "Data Matched";
+    
     }else if($servicio=="Comun"){
         
         
@@ -87,14 +89,20 @@ WHERE boletoPersona.idBoleto = $id";
 
     $sql0= "INSERT INTO idBoleto (id_boleto,evento,nombre_completo,servicio,fechaHora) VALUES ('$id_boleto','$evento','$nombre','$servicio','$fechainsert')";
     mysql_query($sql0);
+    
+    echo "Data Matched";
         
     }else if($idevento===$id_evento and $FechaInicio!=$fechaActual){
         $acceso="Fecha Equivocada";
 
      $sql= "INSERT INTO resumen (acceso,nombre,evento,servicio,fechaHora) VALUES ('$acceso','$nombre','$evento','$servicio','$fechainsert')";
     mysql_query($sql);
+    
+    
+    echo "Data Matched";
         
     }
         
     }
+    
 }
