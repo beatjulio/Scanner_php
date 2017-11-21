@@ -1,0 +1,68 @@
+DESCRIPCION:
+
+Esta proyecto ayuda administrar un servicio de boletaje con codigos QR, Contiene diferentes secciones:
+
+Página Principal
+
+Descripcion:
+
+En esta seccion se podrá acceder a todas las paginas del sitio web como lo son:
+
+•	Nuevo Evento
+•	Generar Boletos
+•	Consultar Boletos
+•	Consultar Boletos por Persona
+•	Consultar Registro de Accesos
+•	Pasar el rato
+
+
+Generar Boletos
+
+Descripcion:
+Esta sección integrada por una tabla y un Formulario usado para registrar nuevos eventos 
+
+Formulario:
+•	Nombre (El nombre del evento a registrar)
+•	Fecha Inicio (La fecha de inicio de cada evento)
+•	Fecha Fin (Fecha Fin de cada evento)
+•	Lugar (Lugar en donde se llevará acabo el Evento)
+Tabla:
+Representa todos los eventos registrados esto para evitar que el cliente registre un evento repetido
+
+Generar Boletos
+
+Esta sección esta integrada por un formulario el cual después de ser llenado se generan los boletos con código QR 
+
+Formulario:
+•	Numero de Impresiones(El numero de boletos deseados)
+•	Evento(El nombre del Evento)
+•	Común(Tipo de Servicio)
+
+
+Consultar Eventos
+
+
+Descripción:
+En esta sección integrada por una tabla la cual representa los eventos Registrados y así mismo se puede exportar en un archivo de Excel
+
+
+Consultar Boletos por Persona
+
+
+Descripción:
+En esta sección integrada por una tabla la cual representa los Boletos Creados y así mismo se puede exportar en un archivo de Excel
+
+
+Consultar Registro de Accesos
+
+
+Descripción:
+En esta sección integrada por una tabla la cual representa los Boletos que accesaron a los eventos y así mismo se puede exportar en un archivo de Excel
+
+
+Pasar el rato
+
+Descripción:
+Esta sección es integrada por un videojuego desarrollado en Action Script
+
+
