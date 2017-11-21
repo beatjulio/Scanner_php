@@ -1,60 +1,124 @@
-# Scanner-App
+# Scanner-PHP
 
 DESCRIPCION
-Esta es la aplicaion Movil Scanner la cual se enfoca totalmente a la lectura de codigos QR de los boletos genrados por la pagina Administrativa, despues de escanearlo lo envia a la pagina web de forma back-end y de ahi se hacen comprobaciones para validar si el boleto ya fue utilizado o si es la primera vez que se aescanea, de ahi le devuelve a la aplicacion de respuesta
+Esta es la página Web que funge como la pagina administradora, es bastante simple de usar y muy intuitivo y simple de usar, en esta pagina se crearan los boletos que con la aplicacion móvil se complementa, tambien puedes crear nuevos eventos, y poder ver las tablas consultando los eventos,los boletos registrados,los boletos creados y aparte se ingluye un juego para pasar el tiempo
 
 PROBLEMA
-Se necesitaba una forma por la cual se pueda escanear codigos QR y saber si los boeltos fueron usados anteriormente es la primera vez que se accede.
+Se necesiataba uan forma para crear los boletos QR segun los eventos requeridos, asi como una forma de poder visualiza el registro de los boltos por todos los eventos y el registro de accesos creados 
 
 SOLUCION
 Se creo esta aplicacion la cual cumple con las necesidades de escanear los codigos QR y ademas devuelve un resultado mostrando el Nombre del Evento, El nombre del lugar del evento, el tipo de boleto y la fecha del evento
 
 ARQUITECTURA
-  -Pantalla de inicio
-  -Camara de escaner
-  -Pantalla de Resultados
+
+Página Principal
+
+Descripcion:
+http://portaljulio.com/Scanner/Admin/
+En esta seccion se podrá acceder a todas las paginas del sitio web como lo son:
+
+•	Nuevo Evento
+•	Generar Boletos
+•	Consultar Boletos
+•	Consultar Boletos por Persona
+•	Consultar Registro de Accesos
+•	Pasar el rato
+
+
+Generar Boletos
+
+Descripcion:
+http://portaljulio.com/Scanner/Admin/nuevoEvento.php
+Esta sección integrada por una tabla y un Formulario usado para registrar nuevos eventos 
+
+Formulario:
+•	Nombre (El nombre del evento a registrar)
+•	Fecha Inicio (La fecha de inicio de cada evento)
+•	Fecha Fin (Fecha Fin de cada evento)
+•	Lugar (Lugar en donde se llevará acabo el Evento)
+Tabla:
+Representa todos los eventos registrados esto para evitar que el cliente registre un evento repetido
+
+Generar Eventos
+
+Descripción:
+http://portaljulio.com/Scanner/Admin/generarQR.php
+En esta sección integrada por una tabla la cual representa los eventos Registrados y así mismo se puede exportar en un archivo de Excel
+
+Formulario:
+•	Numero de Impresiones(El numero de boletos deseados)
+•	Evento(El nombre del Evento)
+•	Común(Tipo de Servicio)
+
+Consultar Boletos por Evento
+
+Descripción:
+http://portaljulio.com/Scanner/Admin/consultaEvento.php
+En esta sección integrada por una tabla la cual representa los Boletos Creados y así mismo se puede exportar en un archivo de Excel
+
+
+Consultar Boletos por Persona
+
+Descripción:
+http://portaljulio.com/Scanner/Admin/consultaRegistroBoleto.php
+En esta sección integrada por una tabla la cual representa los Boletos Creados y así mismo se puede exportar en un archivo de Excel
+
+
+Consultar Registro de Accesos
+
+Descripción:
+http://portaljulio.com/Scanner/Admin/consultaRegistroUsuario.php
+En esta sección integrada por una tabla la cual representa los Boletos que accesaron a los eventos y así mismo se puede exportar en un archivo de Excel
+
+
+Pasar el rato
+
+Descripción:
+http://portaljulio.com/Scanner/Admin/Juego.php
+Esta sección es integrada por un videojuego desarrollado en Action Script
+
   
 REQUERMIENTOS
 
-Aplicacion:
--SmartPhone  Android Con camara fotografica(Se recomienda camara gama media o mejor)
+Navegador con Flash Actualizado:
 -Acceso a Internet
-Programa:
--Android Studio V2.0 o mayor
--Pagina web Que reciba valores tipo POST
-
-
+-Servidor con base Linux
+-Base de datos MySQL
 
 INSTALACION
 
 -Descargar el proyecto
--Abrir Android Studio 
--Importar el Proyecto
+-Cambiar variables de acceso a base de datos
 
 EJECTAR PRUBAS RAPIDAS:
--Importar el proyecto
--Presionar el boton Run
--Escanear un codigo QR
+
+-Accesar a la pagina http://portaljulio.com/Scanner/Admin/index.php
+
 
 EJECUTAR PRUEBAS MANUALES:
 
--Importar el proyecto
--cambiar las variables las cuales albergan la direccion de la pagina web que recibe las variables
--Presionar el boton Run
--Escanear un codigo QR
+-Descargar el proyecto
+-cambiar las variables las cuales apuntan a la base de datos
+-Cargar los archivos en el servidor
+-Acceder a la direccion donde alojaste los archivos
 
 CONFIGURACION
 
--Modificar las variables con las URL que reciben las variables POST
+-Modificar las variables de acceso a la base de datos 
 
 SECCION DE REFERENCIA PARA USUARIO Y ADMINISTRADOR:
 
--Abrir la aplicacion
--Presionar el boton de la pantalla principal
--Apuntar camara al codio QR
--Esperar los resultados
--Presionar el Boton de la pantalla de resultados
--Si se desea volver a escanear Presiona nuevamente el boton de la pantalla principal
+1. Crear eventos
+
+2. Crear Boletos
+
+3.Consultar las bases
+3.1 Consultar base de Eventos
+3.2 Consultar base de Boletos impresos
+3.3 Consultar base de Registro de Accesos
+
+4. Jugar Videojuego
+
 
 REQUERIMIENTOS FUTUROS:
 -Detalles Visuales
