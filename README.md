@@ -124,7 +124,8 @@ REQUERIMIENTOS FUTUROS:
 -Detalles Visuales
 
 
-
+Video Tutorial:
+https://youtu.be/9QPaiTIjJMg
 
 
 
